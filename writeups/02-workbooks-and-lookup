@@ -1,1 +1,32 @@
+# TryHackMe: SOC Workbooks and Lookup
 
+## Overview
+This room covers how SOC analysts use workbooks and lookup tables to add context to raw alert data.
+On their own, things like IP  address or file hashes tell you very little. Lookups turn them into something meaningful
+
+## Scenario
+The room walked through building and using lookup tables to enrich alert data during an investigation, showing how raw log
+fields become actionable once cross-referenced against reference data. 
+
+## My Approach
+1.Identified the raw fields that needed context 
+2. Built a lookup table to map the raw value to something meaningful (assest owner, reputation status, departments e.t.c)
+3. Applied the lookup during the investigation to speed up traige, instead of manually researching each value, the enrichment surfaced 
+the context immediately.
+4. Used the enriched data to make a faster, more confident traige escalation
+
+## Key Skills Demonstrated
+- Data enrichment techniques
+- Understanding how looktup tables integrate into a SIEM/SOC workflow
+- Speeding up triage using pre-built reference data
+- Recognizing why raw alert data alone is often insufficient for a decision
+
+## Lesson Learned
+Before this room, I underestimated how much of triage speed comes from infrastructure (good lookup tables)
+rather than analyst skill alone. A well built lookup table cna turn a 20-minutes investigation into a 2-minute
+one, that's a huge realization for how SOC teams actually scale.
+
+## Reflections
+This connects directly to real SOC work: analyst don't have time to manually research every IP or hash in every alert.
+Lookup tables and workbooks are the quiet infrastructure that makes high alert volumes managable, understanding this changes
+SOC tooling going forward, not just alert themselves.
